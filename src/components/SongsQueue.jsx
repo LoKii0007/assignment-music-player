@@ -15,7 +15,7 @@ const SongsQueue = ({ songs, setActiveSong, activeSong, sound, setSound, isPlayi
   return (
     <>
       <div className="song-home w-full h-full flex flex-col gap-4 ">
-        <div className="que-top h-[8vh] flex justify-center items-center px-12 gap-5 text-center">
+        <div className="que-top h-[8vh] flex justify-center text-[18px] font-semibold items-center px-12 gap-5 text-center">
           <div className="flt-left grid grid-cols-4 w-1/2 ">
             <div>Music</div>
             <div>Podcast</div>
@@ -26,8 +26,9 @@ const SongsQueue = ({ songs, setActiveSong, activeSong, sound, setSound, isPlayi
             <input
               type="text"
               placeholder="Michael jackson"
-              className="bg-[#2C0000] mx-1 px-2 focus:ring-0 text-[#F6F6F6] "
+              className="bg-[#2C0000] mx-1 ps-4 focus:ring-0 focus:outline-none !text-[#F6F6F6] w-full "
             />
+            <div className="pe-4"><img src="./search.png" alt="" /></div>
           </div>
         </div>
         <div className="que-body h-[40vh] px-[12%] flex justify-center items-end relative">

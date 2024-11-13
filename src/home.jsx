@@ -71,7 +71,8 @@ const Home = () => {
         <div className="home-left w-[25%] bg-black">
           <Sidebar />
         </div>
-        <div className="home-mid w-[55%] gradient-2">
+        <div className="home-2 flex w-[75%]">
+        <div className="home-mid w-[70%] gradient-2">
           <SongsQueue
             activeSong={activeSong}
             setActiveSong={setActiveSong}
@@ -82,8 +83,9 @@ const Home = () => {
             isPlaying={isPlaying}
           />
         </div>
-        <div className="home-right w-[20%] py-5 px-6 flex items-end gradient">
+        <div className="home-right w-[30%] py-5 px-6 flex items-end gradient">
           <SongCard setActiveSong={setActiveSong} songs={songs} sound={sound} setSound={setSound} activeSong={activeSong} isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+        </div>
         </div>
       </div>
     </>

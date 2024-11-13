@@ -12,8 +12,8 @@ const Sidebar = () => {
         </div>
         <div className="menu flex flex-col justify-between h-[92vh] py-12 ">
           <div className="menu-top">
-            <div className="text-[10px] font-normal pb-3">MENU</div>
-            <div className="font-medium flex flex-col gap-4">
+            <div className="text-[10px] font-normal pb-3 info">MENU</div>
+            <div className="font-medium flex flex-col gap-4 menu-items">
               <div className="flex gap-3 items-center">
                 <img className="h-5 w-5" src="./home.png" alt="" />
                 <div className="menu-item">Home</div>
@@ -33,8 +33,8 @@ const Sidebar = () => {
             </div>
           </div>
           <div className="menu-bottom">
-            <div className="text-[10px] font-normal pb-3">General</div>
-            <div className="font-medium flex flex-col gap-4">
+            <div className="text-[10px] font-normal pb-3 info">General</div>
+            <div className="font-medium flex flex-col gap-4 menu-items">
               <div className="flex gap-3 items-center">
               <img className="h-5 w-5" src="./Settings.png" alt="" />
                 <div className="menu-item">Settings</div>

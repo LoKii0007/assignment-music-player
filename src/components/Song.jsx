@@ -37,7 +37,7 @@ const Song = ({song, setActiveSong, activeSong, index, sound, setSound, isPlayin
   return (
     <>
       {/* <div ref={setNodeRef} {...attributes} {...listeners} style={style}> */}
-        <div onClick={(e)=>{
+        <button onClick={(e)=>{
             e.stopPropagation()
             handleSong(song)
         }}
@@ -50,7 +50,7 @@ const Song = ({song, setActiveSong, activeSong, index, sound, setSound, isPlayin
           <div className="w-2/12 text-left ">{song.plays}</div>
           <div className="w-2/12 text-left ">{song.playing_time}</div>
           <div className="w-3/12 text-left overflow-x-hidden whitespace-nowrap ">{song.album}</div>
-        </div>
+        </button>
       {/* </div> */}
     </>
   )

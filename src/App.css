@@ -22,3 +22,59 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.home-left, .menu-item, .menu-items, .sidebar{
+  transition: .5s ease;
+}
+
+@media screen and (max-width : 1300px){
+   .menu-item{
+    display: none  ;
+   }
+   .logo-name{
+    display: none;
+   }
+   .home-left{
+    width: 10% ;
+    min-width: fit-content;
+   }
+   .sidebar{
+    padding: 0px 24px;
+   }
+   .info{
+    display: none;
+   }
+   .menu-items div{
+    justify-content: center;
+   }
+   .home-2{
+    width: 90%;
+   }
+}
+
+@media screen and (max-width : 1000px){
+  .home-2{
+    flex-direction: column;
+    transform: translateX(10%);
+  }
+     .home-mid{
+    width: 100%;
+   }
+   .home-right{
+    width: 100%;
+    padding: 42px 20%;
+   }
+   .song-img{
+    height: 400px ;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   }
+   .home-left{
+    position: fixed;
+    top: 0%;
+   }
+
+}

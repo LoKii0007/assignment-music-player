@@ -108,16 +108,20 @@ const SongCard = ({ setSound, sound, activeSong, setActiveSong, songs, isPlaying
           />
           <div className="end-time">{activeSong.playing_time}</div>
         </div>
-        <div className="controls flex justify-between w-full gap-5">
-          <div></div>
-          <div className="w-2/3 flex justify-between gap-3">
-            <button onClick={handlePrev}><img src="./Back.png" className="h-5 w-5" alt="" /></button>
-            <button onClick={handlePlayPauseToggle}>
-              <img src={isPlaying ? "./Pause.png" : "./Play.png"} className="h-5 w-5 bg-red-800" alt="" />
-            </button>
-            <button onClick={handleNext}><img src="./Next.png" className="h-5 w-5" alt="" /></button>
+        <div className="controls flex justify-between w-full gap-5 px-2 items-center pt-3 ">
+          <div>
+            <img src="./Repeat.png" alt="" />
           </div>
-          <div></div>
+          <div className="w-2/3 flex justify-between gap-3 px-2">
+            <button onClick={handlePrev}><img src="./Back.png" className="h-9 w-9" alt="" /></button>
+            <button onClick={handlePlayPauseToggle}>
+              <img src={isPlaying ? "./Pause.png" : "./Play.png"} className="h-9 w-9 bg-red-800 p-1 rounded-md " alt="" />
+            </button>
+            <button onClick={handleNext}><img src="./Next.png" className="h-9 w-9" alt="" /></button>
+          </div>
+          <div>
+            <img src="./Random.png" alt="" />
+          </div>
         </div>
       </div>
     </>
